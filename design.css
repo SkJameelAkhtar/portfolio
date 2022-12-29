@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Prosto+One:wght@25&display=swap'); */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: #111010;
+    color: whitesmoke;
+    
+}
+
+#logo{
+    padding: 30px 50px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Secular One';
+    font-weight: bold;
+    position: relative;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0004); */
+    outline: none;
+    animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+
+}
+
+.navigation{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    right:3rem;
+    top:1.75rem;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    padding: 15px 30px;
+    /* color: aliceblue; */
+}
+
+
+header{
+
+    height:60px;
+    position: sticky;
+    top: 0px;
+    background-color: #111010;
+    z-index: 1;
+}
+
+#github,#linkedin,#twitter{
+    font-size: 2rem;
+    padding: 1px 5px;
+    padding-top: 1px;
+    margin: 0 1px;
+    /* background: #111010; */
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #00000080,
+    5px 5px 6px #00000080,
+    inset 1px 1px 1px #00000080,
+    inset 1px 1px 1px #00000080;
+    text-shadow: 0px 0px 10px #0072ff,
+                 0px 0px 15px #0072ff,
+                 0px 0px 20px #0072ff,
+                 0px 0px 25px #0072ff;
+
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+#twitter{
+    animation-delay: 0.4s;
+}
+#linkedin{
+    animation-delay: 1s;
+}
+#github{
+    animation-delay: 1.5s;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.box{
+    display:inline-block;
+    width: 500px;
+    height:200px;
+    /* border: 5px solid white; */
+    margin: 5px;
+    text-align: center;
+
+}
+
+#intro{
+    margin: 80px;
+    width:1100px;
+    /* border: 3px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box3{
+    width:450px;
+}
+
+#box4{
+    text-align: left;
+}
+
+.p1{
+    font-family: 'Secular One', sans-serif;
+    font-size: 4rem;
+}
+
+#smalltext{
+    font-size: 15px;
+    font-family: 'Prosto One', sans-serif;
+}
+
+.p3{
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    opacity:0.5;
+    letter-spacing: 1ch;
+}
+
+#span1{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+#span2{
+    color: greenyellow;
+    font-size: 17px;
+}
+
+#projects{
+    margin:140px;
+
+}
+
+.p4{
+    font-size: 2rem;
+    font-family: 'Secular One',sans-serif;
+    text-decoration: underline;
+}
+
+#hoz{
+    opacity:0.4;
+}
+
+.p5{
+    font-family: 'Exo 2', sans-serif;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+#foot{
+    /* border: 3px solid white; */
+    display: flex;
+    /* margin-left: 7rem; */
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+#socials,#contact{
+    /* border: 3px solid white; */
+    width:30rem;
+    padding: 10px;
+    margin:15px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* #discord{
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+#discord:hover{
+    background: #1e9bff;
+    letter-spacing: 0.25rem;
+    box-shadow: 0 0 35px;
+    
+} */
