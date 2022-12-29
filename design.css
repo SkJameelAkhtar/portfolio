@@ -9,16 +9,19 @@
 body{
     background-color: #111010;
     color: whitesmoke;
-    
 }
 
+
 #logo{
-    padding: 30px 50px;
+    /* padding: 30px 50px; */
+    /* border: 3px solid white; */
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Secular One';
     font-weight: bold;
     position: relative;
+    margin-top: 1.875rem;
+    margin-left: 3.125rem;
     /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0004); */
     outline: none;
     animation: animate 5s linear infinite;
@@ -41,32 +44,41 @@ body{
 
 }
 
+
+
 .navigation{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    display: inline-block;
+    width: 24%;
+    display: flex;
     text-decoration: none;
     font-weight: bold;
     position: absolute;
-    right:3rem;
-    top:1.75rem;
+    /* right:3rem; */
+    top:1rem;
+    flex-direction:row;
+    justify-content: flex-end;
+    /* border: 3px solid red; */
+    right: 30px;
 }
 
 li{
     display: inline;
     list-style: none;
-    padding: 15px 30px;
+    padding: 15px;
     /* color: aliceblue; */
 }
 
 
-header{
 
-    height:60px;
+#header{
+    height:4.2rem;
+    width:100%;
     position: sticky;
     top: 0px;
-    background-color: #111010;
-    z-index: 1;
+    background-color: rgb(17, 16, 16);
+    /* z-index: 1; */
+    /* border: 3px solid yellow; */
 }
 
 #github,#linkedin,#twitter{
@@ -117,22 +129,25 @@ a{
     display:inline-block;
     width: 500px;
     height:200px;
-    /* border: 5px solid white; */
     margin: 5px;
     text-align: center;
+    /* border: 3px solid white; */
 
 }
 
 #intro{
-    margin: 80px;
-    width:1100px;
-    /* border: 3px solid white; */
+    margin: 0rem;
+    margin-top: 6rem;
+    width:100%;
+    /* padding-left: 9rem; */
     display: flex;
     flex-wrap: wrap;
+    /* border: 3px solid white; */
 }
 
 #box3{
     width:450px;
+    margin-top: 0.75rem;
 }
 
 #box4{
@@ -142,10 +157,12 @@ a{
 .p1{
     font-family: 'Secular One', sans-serif;
     font-size: 4rem;
+    text-align: left;
+    /* border: 3px solid white; */
 }
 
 #smalltext{
-    font-size: 15px;
+    font-size: 0.94rem;
     font-family: 'Prosto One', sans-serif;
 }
 
@@ -154,6 +171,7 @@ a{
     text-align: center;
     opacity:0.5;
     letter-spacing: 1ch;
+    /* border: 3px solid white; */
 }
 
 #span1{
@@ -163,12 +181,14 @@ a{
 
 #span2{
     color: greenyellow;
-    font-size: 17px;
+    font-size: 1.06rem;
 }
 
 #projects{
-    margin:140px;
-
+    margin:0rem;
+    /* border: 3px solid white; */
+    width: 100%;
+    margin-top: 12rem;
 }
 
 .p4{
@@ -179,6 +199,7 @@ a{
 
 #hoz{
     opacity:0.4;
+    width: 100vw;
 }
 
 .p5{
@@ -188,24 +209,32 @@ a{
 }
 
 #foot{
-    /* border: 3px solid white; */
+    width: 100%;
     display: flex;
     /* margin-left: 7rem; */
-    
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    border-top: 2px solid whitesmoke;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* border: 3px solid white; */
+    padding-top: 0rem;
 
 }
 
 #socials,#contact{
     /* border: 3px solid white; */
-    width:30rem;
+    width:20rem;
     padding: 10px;
     margin:15px;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
     
+}
+#socials{
+    line-height:3rem;
+}
+#socials #p6{
+    line-height: 5rem;
 }
 
 /* #discord{
@@ -221,5 +250,168 @@ a{
     background: #1e9bff;
     letter-spacing: 0.25rem;
     box-shadow: 0 0 35px;
+    
+} */
+
+@media screen and (max-width:425px){
+    #logo{
+        display:block;
+        /* position: inherit; */
+        /* margin-left: 1rem; */
+        margin:1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #header{
+        width:100%;
+        height:3rem;
+        /* position: relative; */
+        margin:none;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    #intro{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        margin:0rem;
+        margin-top: 35px;
+        width:100%;
+    }
+    #box2, #box3{
+        display:none;
+    }
+    .box{
+        width:100%;
+        height:6rem;
+        margin: 0rem;
+        padding-left: 1rem;
+    }
+    .p1{
+        font-size: 2rem;
+        text-align: left;
+    }
+    #smalltext{
+        font-size: 0.6rem;
+        font-family: 'Prosto One', sans-serif;
+    }
+    #span2{
+        /* color: greenyellow; */
+        font-size: 0.8rem;
+    }
+    #projects{
+        margin:0rem;
+        width: 100%;
+        margin-top: 8rem;
+        padding-left: 1rem;
+    }
+    #foot{
+        width: 100%;
+        flex-direction: column;
+        margin: 0rem;
+        margin-top: 8rem;
+        padding:0px;
+    }
+    #socials,#contact{
+        width:16rem;
+        font-size: smaller;
+        /* padding: 10px; */
+        /* margin:15px; */
+        /* align-items: center; */
+        /* text-align: center; */
+        
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+
+    #box2{
+        display: none;
+    }
+    .navigation{
+        display:none;
+    }
+    #box3{
+        width:15rem;
+        padding-top: 4rem;
+    }
+    #box4{
+        width: auto;
+        padding-left: 20rem;
+    }
+    #foot{
+        margin-top: 12rem;
+        padding-top: 0rem;
+    }
+    #socials{
+        line-height:3rem;
+    }
+    #socials #p6{
+        line-height: 5.6rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    #header{
+        width:58rem;
+    }
+    #intro{
+        width:50rem;
+        margin-left: 5rem;
+    }
+    #box2{
+        width: 15rem;
+    }
+    #box3{
+        width:20rem;
+    }
+    .box{
+        padding-left: 5rem;
+    }
+    #box4{
+        width:28rem;
+    }
+    #projects{
+        width:50rem;
+        margin-left: 8rem;
+    }
+    #foot{
+        width: 100%;
+        margin-top: 10rem;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    #intro{
+        width:70rem;
+        margin-left: 8rem;
+    }
+    #box4{
+        width: 40rem;
+    }
+    #projects{
+        width:70rem;
+        margin-left: 8rem;
+    }
+    #foot{
+        margin-top: 10rem;
+        /* margin-left: 10rem; */
+        justify-content: space-around;
+    }
+}
+
+/* @media screen and (min-width:1440px) {
+    #projects{
+        margin-left: 8rem;
+        width: 75rem;
+    }
+    #foot{
+        margin-left: 8rem;
+
+    }
     
 } */
