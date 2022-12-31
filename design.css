@@ -44,8 +44,6 @@ body{
 
 }
 
-
-
 .navigation{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -77,7 +75,7 @@ li{
     position: sticky;
     top: 0px;
     background-color: rgb(17, 16, 16);
-    /* z-index: 1; */
+    z-index: 1;
     /* border: 3px solid yellow; */
 }
 
@@ -143,6 +141,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     /* border: 3px solid white; */
+    animation: entry 0.75s ease-in 1;
 }
 
 #box3{
@@ -189,6 +188,7 @@ a{
     /* border: 3px solid white; */
     width: 100%;
     margin-top: 12rem;
+    animation: entry 0.75s ease-in 1;
 }
 
 .p4{
@@ -218,6 +218,7 @@ a{
     /* justify-content: center; */
     /* border: 3px solid white; */
     padding-top: 0rem;
+    animation: entry 0.75s ease-in 1;
 
 }
 
@@ -235,6 +236,17 @@ a{
 }
 #socials #p6{
     line-height: 5rem;
+}
+
+@keyframes entry{
+    0%{
+        opacity:0.0;
+        padding-top:10px;
+    }
+    100%{
+        opacity: 1;
+        /* padding-top: 0px; */
+    }
 }
 
 /* #discord{
@@ -381,6 +393,8 @@ a{
     #foot{
         width: 100%;
         margin-top: 10rem;
+        /* margin-left: 5rem; */
+        text-align: center;
         justify-content: space-around;
     }
 }
