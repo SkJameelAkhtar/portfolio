@@ -129,6 +129,9 @@ a{
     height:200px;
     margin: 5px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+
     /* border: 3px solid white; */
 
 }
@@ -142,6 +145,27 @@ a{
     flex-wrap: wrap;
     /* border: 3px solid white; */
     animation: entry 0.75s ease-in 1;
+}
+
+#box2{
+    /* font-size: larger; */
+    /* font-weight: bolder; */
+    display: flex;
+    /* width: 20rem; */
+    align-items: center;
+    justify-content: left;
+}
+
+#day,#timed,#time,#year{
+    font-family: 'Secular One', sans-serif;
+    /* font-size: 1.5rem; */
+    color: #fff;
+}
+#day,#timed{
+    color: greenyellow;
+}
+#time{
+    color:#00e8f0;
 }
 
 #box3{
@@ -293,7 +317,18 @@ a{
         margin-top: 35px;
         width:100%;
     }
-    #box2, #box3{
+    #box2{
+        font-size: 15px;
+        height:30px;
+        width: 100%;
+        padding: 25px 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    #clockbreak{
+        display: none;
+    }
+    #box3{
         display:none;
     }
     .box{
@@ -368,23 +403,40 @@ a{
 
 @media screen and (min-width:769px) and (max-width:1024px){
     #header{
-        width:58rem;
+        width:100%;
     }
     #intro{
-        width:50rem;
+        width:55rem;
         margin-left: 5rem;
     }
     #box2{
-        width: 15rem;
+        font-size: larger;
+        font-weight: bolder;
+        display: flex;
+        width: 20rem;
+        align-items: center;
+        justify-content: left;
+    }
+    #day,#timed,#time,#year{
+        font-family: 'Secular One', sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    #day,#timed{
+        color: greenyellow;
+    }
+    #time{
+        color:#00e8f0;
     }
     #box3{
+        padding-top: 5px;
         width:20rem;
     }
-    .box{
+    /* .box{
         padding-left: 5rem;
-    }
+    } */
     #box4{
-        width:28rem;
+        width:33rem;
     }
     #projects{
         width:50rem;
@@ -403,6 +455,29 @@ a{
     #intro{
         width:70rem;
         margin-left: 8rem;
+    }
+    #box1{
+        width: 28rem;
+    }
+    #box2{
+        font-size: larger;
+        font-weight: bolder;
+        display: flex;
+        width: 20rem;
+        align-items: center;
+        justify-content: left;
+    }
+
+    #day,#timed,#time,#year{
+        font-family: 'Secular One', sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    #day,#timed{
+        color: greenyellow;
+    }
+    #time{
+        color:#00e8f0;
     }
     #box4{
         width: 40rem;
