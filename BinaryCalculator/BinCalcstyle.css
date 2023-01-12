@@ -4,20 +4,20 @@ body {
   background-color: rgb(17, 16, 16);
 }
 
-#headtxt{
+#headtxt {
   font-family: 'DM Mono', sans-serif;
-font-size: 300%;
-margin: auto;
-text-align: center;
-margin-top: 10%;
-width:50%;
-color: yellow;
-font-weight: bolder;
+  font-size: 300%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+  width: 50%;
+  color: yellow;
+  font-weight: bolder;
 
-/* border: 3px solid white; */
+  /* border: 3px solid white; */
 }
 
-#container{
+#container {
   background-color: #201830;
   /* background-color: blueviolet; */
   width: 50%;
@@ -35,7 +35,7 @@ font-weight: bolder;
   grid-template-columns: 1fr;
   background-color: lightgray;
   height: 48px;
-  width:98%;
+  width: 98%;
   font-size: 35px;
   margin: auto;
   border-radius: 10px;
@@ -43,13 +43,13 @@ font-weight: bolder;
   /* border: 5px solid red; */
 }
 
-#buttons{
+#buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+
 }
 
-.keyb{
+.keyb {
   border: 3px solid black;
 
   width: 90%;
@@ -61,27 +61,45 @@ font-weight: bolder;
   border-radius: 5px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
 }
 
-#btn0,
-#btn1 {margin-top: 12px;
+#btn0,#btn1 {
+  margin-top: 12px;
   background-color: lightgreen;
   color: brown;
 }
 
-#btnClr,
-#btnEql {margin-top: 12px;
+#btnClr,#btnEql {
+  margin-top: 12px;
   background-color: darkgreen;
   color: white;
 }
 
-#btnSum,
-#btnSub,
-#btnMul,
-#btnDiv {
+#btnSum,#btnSub,#btnMul,#btnDiv {
   background-color: black;
   color: red;
+}
+
+
+@media screen and (max-width:425px){
+  #headtxt{
+    width: 90%;
+    margin-top: 40%;
+    font-size: 30px;
+  }
+  #container{
+    width:90%;
+  }
+  #res{
+    font-size: 20px;
+  }
+  .keyb{
+    margin:none;
+    padding: none;
+    width:80%;
+    font-size: 18px;
+  }
 }
