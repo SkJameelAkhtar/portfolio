@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(17, 16, 16);
+}
+#mainp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:98vh;
+    width: 98vw;
+    margin: auto;
+    /* border: 3px solid red; */
+}
+.clock{
+    display: flex;
+
+    justify-content: center;
+    background: url('clock.png') no-repeat;
+    background-size: 100%;
+    position:relative;
+    width:35vw;
+    height:35vw;
+    margin:auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 10rem 5rem rgb(34, 18, 39);
+    /* -1rem 1rem 1rem rgb(34, 18, 39); */
+}
+#sechand,#minhand,#hhand,#cent{
+    position: absolute;
+    /* background: whitesmoke; */
+    border-radius: 5px;
+    transform-origin: bottom;
+    /* border: 3px solid red; */
+}
+#sechand{
+    height:40%;
+    width:0.5%;
+    top:10%;
+    left: 49.4%;
+    background: whitesmoke;
+    /* display: none; */
+}
+#minhand{
+    height:35%;
+    width:1%;
+    top:15%;
+    left:49.3%;
+    background: rgb(155, 155, 255);
+    /* display: none; */
+}
+#hhand{
+    height:22%;
+    width:1.5%;
+    top:28%;
+    left:49.1%;
+    background:rgb(155, 155, 255);
+    /* display: none; */
+}
+#cent{
+    height:5%;
+    width:5%;
+    top:47.5%;
+    /* opacity:0.5; */
+    background: rgb(109, 109, 255);
+    border-radius: 50px;
+}
+
+@media screen and (max-width:425px){
+    .clock{
+        width:60vw;
+        height:60vw;
+    }
+}
