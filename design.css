@@ -241,13 +241,15 @@ a {
 }
 
 #smalltext {
-    font-size: 0.94rem;
+    font-size: 1rem;
     font-family: 'DM Mono', sans-serif;
+    font-weight: 500;
 }
 
 #span2 {
     color: greenyellow;
-    font-size: 1.06rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* Projects section */
