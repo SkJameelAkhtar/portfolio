@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="ComputerNumberSystems.css">
+    <title>Computer Number Systems</title>
+</head>
+
+<body>
+    <div id="header">Computer Number Systems Converter</div>
+    <section class="conv" id="Instructions">Instructions
+        <article id="instruct">To use the Converter, type in your input at the specified location and click on Calculate
+            to receive your output in the purple box. Incorrect output may lead to incorrect solutions.
+        </article>
+    </section>
+
+
+
+    <section class="conv" id="tobinary">To Binary:
+        <hr class="seprule">
+        <div class="gridlay">
+
+            <div class="grids heading written">Data Type</div>
+            <div class="grids written"></div>
+            <div class="grids heading written">Output Binary</div>
+
+            <!-- decimal to binary -->
+            <div class="grids written">Decimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="dectobininp"
+                    placeholder="Decimal number goes here"></div>
+            <div class="grids"><button class="ansbtn" onclick="dectobinary()">Calculate</button></div>
+            <div class="grids op" id="opdectobin">Output</div>
+
+            <!-- octal to binary -->
+            <div class="grids written">Octal: </div>
+            <div class="grids"><input type="text" name="decimal" id="octtobininp" placeholder="Octal number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="octtobinary()">Calculate</button></div>
+            <div class="grids op" id="opocttobin">Output</div>
+
+            <!-- hexadecimal to binary  -->
+            <div class="grids written">Hexadecimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="hextobininp" placeholder="HexaDecimal goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="hextobinary()">Calculate</button></div>
+            <div class="grids op" id="ophextobin">Output</div>
+        </div>
+    </section>
+
+
+
+    <section class="conv" id="todecimal">To Decimal:
+        <hr class="seprule">
+        <div class="gridlay">
+
+            <div class="grids heading written">Data Type</div>
+            <div class="grids written"></div>
+            <div class="grids heading written">Output Decimal</div>
+
+            <div class="grids written">Binary: </div>
+            <div class="grids"><input type="text" name="decimal" id="bintodecinp" placeholder="Binary number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="bintodecimal()">Calculate</button></div>
+            <div class="grids op" id="opbintodec">output</div>
+
+            <div class="grids written">Octal: </div>
+            <div class="grids"><input type="text" name="decimal" id="octtodecinp" placeholder="Octal number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="octtodecimal()">Calculate</button></div>
+            <div class="grids op" id="opocttodec">output</div>
+
+            <div class="grids written">Hexadecimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="hextodecinp" placeholder="HexaDecimal goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="hextodecimal()">Calculate</button></div>
+            <div class="grids op" id="ophextodec">output</div>
+        </div>
+    </section>
+
+
+
+    <section class="conv" id="tooctal">To Octal:
+        <hr class="seprule">
+        <div class="gridlay">
+
+            <div class="grids heading written">Data Type</div>
+            <div class="grids written"></div>
+            <div class="grids heading written">Output Octal</div>
+
+            <div class="grids written">Binary: </div>
+            <div class="grids"><input type="text" name="decimal" id="bintooctinp" placeholder="Binary number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="bintooctal()">Calculate</button></div>
+            <div class="grids op" id="opbintooct">output</div>
+
+            <div class="grids written">Decimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="dectooctinp"
+                    placeholder="Decimal number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="dectooctal()">Calculate</button></div>
+            <div class="grids op" id="opdectooct">output</div>
+
+            <div class="grids written">Hexadecimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="hexdectooctinp"
+                    placeholder="HexaDecimal goes here"></div>
+            <div class="grids"><button class="ansbtn" onclick="hexdectooctal()">Calculate</button></div>
+            <div class="grids op" id="ophexdectooct">output</div>
+        </div>
+    </section>
+
+
+
+    <section class="conv" id="tohexadecimal">To Hexadecimal:
+        <hr class="seprule">
+        <div class="gridlay">
+
+            <div class="grids heading written">Data Type</div>
+            <div class="grids written"></div>
+            <div class="grids heading written">Output HexaDecimal</div>
+
+            <div class="grids written">Binary: </div>
+            <div class="grids"><input type="text" name="decimal" id="bintohexdecinp"
+                    placeholder="Binary number goes here"></div>
+            <div class="grids"><button class="ansbtn" onclick="bintohexdec()">Calculate</button></div>
+            <div class="grids op" id="opbintohexdec">output</div>
+
+            <div class="grids written">Decimal: </div>
+            <div class="grids"><input type="text" name="decimal" id="dectohexdecinp"
+                    placeholder="Decimal number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="dectohexdec()">Calculate</button></div>
+            <div class="grids op" id="opdectohexdec">output</div>
+
+            <div class="grids written">Octal: </div>
+            <div class="grids"><input type="text" name="decimal" id="octtohexdecinp"
+                    placeholder="Octal number goes here">
+            </div>
+            <div class="grids"><button class="ansbtn" onclick="octtohexdec()">Calculate</button></div>
+            <div class="grids op" id="opocttohexdec">output</div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="bottom">
+            <p id="contactme">Contact Me:</p>
+            <div id="totalblock">
+                <div id="mail"><a href="mailto:skjameelakhtar2003@gmail.com">Email: skjameelakhtar2003@gmail.com</a>
+                </div>
+                <div class="socials"><a class="socialm" href="https://github.com/SkJameelAkhtar"><i
+                            class="fa fa-github-square" id="github"></i></a>
+                </div>
+                <div class="socials"><a class="socialm" href="https://www.linkedin.com/in/sjakhtar/"><i
+                            class="fa fa-linkedin-square" id="linkedin"></i></a>
+                </div>
+                <div class="socials"><a class="socialm" href="https://twitter.com/skjameelakhtar"><i
+                            class="fa fa-twitter-square" id="twitter"></i></a></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function dectobinary() {
+            let x = document.getElementById("dectobininp").value;
+            // x = parseInt(x);
+            let ans = parseInt(x, 10).toString(2);
+            let outp = document.getElementById("opdectobin");
+            outp.innerHTML = ans;
+        }
+
+        function octtobinary() {
+            let x = document.getElementById("octtobininp").value;
+            let outp = document.getElementById("opocttobin");
+            // x = parseInt(x);
+            let i = 0;
+            let binary = "";
+            while (i < x.length) {
+                let c = x[i];
+                switch (c) {
+                    case '0':
+                        binary += "000";
+                        break;
+                    case '1':
+                        binary += "001";
+                        break;
+                    case '2':
+                        binary += "010";
+                        break;
+                    case '3':
+                        binary += "011";
+                        break;
+                    case '4':
+                        binary += "100";
+                        break;
+                    case '5':
+                        binary += "101";
+                        break;
+                    case '6':
+                        binary += "110";
+                        break;
+                    case '7':
+                        binary += "111";
+                        break;
+                    default:
+                        break;
+                }
+                i++;
+            }
+            outp.innerHTML = binary;
+        }
+
+        function hextobinary() {
+            let x = document.getElementById("hextobininp").value;
+            // let ans = x.toString(2);
+            ans = parseInt(x, 16).toString(2);
+            let outp = document.getElementById("ophextobin");
+            outp.innerHTML = ans;
+
+        }
+
+
+
+        function bintodecimal() {
+            let x = document.getElementById("bintodecinp").value;
+            ans = parseInt(x, 2);
+            let outp = document.getElementById("opbintodec");
+            outp.innerHTML = ans;
+        }
+
+        function octtodecimal() {
+            let x = document.getElementById("octtodecinp").value;
+            ans = parseInt(x, 8).toString(10);
+            let outp = document.getElementById("opocttodec");
+            outp.innerHTML = ans;
+        }
+
+        function hextodecimal() {
+            let x = document.getElementById("hextodecinp").value;
+            ans = parseInt(x, 16).toString(10);
+            let outp = document.getElementById("ophextodec");
+            outp.innerHTML = ans;
+        }
+
+
+
+
+        function bintooctal() {
+            let x = document.getElementById("bintooctinp").value;
+            ans = parseInt(x, 2).toString(8).toUpperCase();
+            let outp = document.getElementById("opbintooct");
+            outp.innerHTML = ans;
+        }
+
+        function dectooctal() {
+            let x = document.getElementById("dectooctinp").value;
+            ans = parseInt(x, 10).toString(8).toUpperCase();
+            let outp = document.getElementById("opdectooct");
+            outp.innerHTML = ans;
+        }
+
+        function hexdectooctal() {
+            let x = document.getElementById("hexdectooctinp").value;
+            ans = parseInt(x, 16).toString(8).toUpperCase();
+            let outp = document.getElementById("ophexdectooct");
+            outp.innerHTML = ans;
+        }
+
+
+
+        function bintohexdec() {
+            let x = document.getElementById("bintohexdecinp").value;
+            ans = parseInt(x, 2).toString(16).toUpperCase();
+            let outp = document.getElementById("opbintohexdec");
+            outp.innerHTML = ans;
+        }
+
+        function dectohexdec() {
+            let x = document.getElementById("dectohexdecinp").value;
+            ans = parseInt(x, 10).toString(16).toUpperCase();
+            let outp = document.getElementById("opdectohexdec");
+            outp.innerHTML = ans;
+        }
+
+        function octtohexdec() {
+            let x = document.getElementById("octtohexdecinp").value;
+            ans = parseInt(x, 8).toString(16).toUpperCase();
+            let outp = document.getElementById("opocttohexdec");
+            outp.innerHTML = ans;
+        }
+
+
+    </script>
+</body>
+
+</html>
