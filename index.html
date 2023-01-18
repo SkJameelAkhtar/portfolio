@@ -9,62 +9,73 @@
   <link rel="stylesheet" href="design.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prosto One">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <script src="logical.js"></script>
-
+  <script src="https://kit.fontawesome.com/8994752c9e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="design.css">
   <title>Jameel-Portfolio</title>
-
 </head>
-
-
 
 <body>
   <div id="header">
-    <div id="logo">Sk Jameel Akhtar</div>
-    <div>
-
-      <nav class="navbar">
-        <ul class="navigation">
-          <li><a href="https://github.com/SkJameelAkhtar" target="_blank"><i class="fa fa-github-square"
-                id="github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/sjakhtar/" target="_blank"><i class="fa fa-linkedin-square"
-                id="linkedin"></i></a></li>
-          <li><a href="https://twitter.com/skjameelakhtar" target="_blank"><i class="fa fa-twitter-square"
-                id="twitter"></i></a></li>
-        </ul>
-      </nav>
+    <!-- <div id="headelements"> -->
+    <div id="logo"><a href="#intro">SKJAMEELAKHTAR</a></div>
+    <div class="navbar">
+      <div class="navelements" id="projectsnav"><a href="#projects">Projects</a></div>
+      <div class="navelements" id="skillsnav"><a href="#skills">Skills</a></div>
+      <div class="navelements" id="aboutmenav"><a href="#aboutme">About Me</a></div>
+      <a href="#contactmeform">
+        <div id="contactme">Contact ME</div>
+      </a>
     </div>
   </div>
 
-
-
-  <div id="intro">
-
-    <div class="box" id="box1">
-      <p class="p1" id="bigtext">Hello There!<br>I am <span id="span1">Jameel</span>.</p>
+  <section id="intro">
+    <div id="writehold">
+      <div class="info" id="box1">
+        <p>Hello There<br>I am <span>Jameel.</span></p>
+      </div>
+      <div class="info" id="box2">
+        <p>I am a FrontEnd Web Developer. &nbsp Come, let's envision <span id="tagline">together.</span> </p>
+      </div>
     </div>
-    <div class="box" id="box2"><a href="AnalogClock/clock.html"><span id=clockletters>
-          <p id="datetime"><span id="day"></span><span id="timed"></span><span id="year"></span><br
-              id="clockbreak"><span id="time"></span></p>
-        </span></a></div>
-    <div class="box" id="box3">
-      <p class="p3" id="rep2"><br>BE CREATIVE</p>
-    </div>
-    <div class="box" id="box4">
-      <p class="p2" id="smalltext">I am a <span id="span2">First-year student</span> in the B.Tech Computer Science and
-        Engineering program from <span id="span2">India</span>. My portfolio is a representation of all that I've
-        learned and accomplished during my learning journey.</p>
-    </div>
+    <div class="info" id="box3"></div>
+  </section>
 
-  </div>
+  <section id="projects" >
+    <h1>Projects</h1>
 
 
+    <section class="card-list" data-aos="zoom-out-up" data-aos-once="true">
 
-  <div id="projects">
-    <p class="p1">Projects</p>
-    <!-- <p class="p3">To be updated</p> -->
+      <article class="card">
+        <header class="card-header">
+          <p>Jan 14th 2023</p>
+          <h2><a href="ComputerNumberSystems/ComputerNumberSystems.html" target="_blank">Computer Number System
+              Converter</a></h2>
+        </header>
 
-    <section class="card-list">
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="Profilepictures/propic.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">By</div>
+            Jameel
+          </div>
+        </div>
+        <div class="tags">
+          <a href="#">html</a>
+          <a href="#">css</a>
+          <a href="#">js</a>
+        </div>
+      </article>
+
+
 
       <article class="card">
         <header class="card-header">
@@ -92,33 +103,6 @@
         </div>
       </article>
 
-
-
-      <article class="card">
-        <header class="card-header">
-          <p>Jan 14th 2023</p>
-          <h2><a href="ComputerNumberSystems/ComputerNumberSystems.html" target="_blank">Computer Number System Converter</a></h2>
-        </header>
-
-        <div class="card-author">
-          <a class="author-avatar" href="#">
-            <img src="Profilepictures/propic.png" />
-          </a>
-          <svg class="half-circle" viewBox="0 0 106 57">
-            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-          </svg>
-
-          <div class="author-name">
-            <div class="author-name-prefix">By</div>
-            Jameel
-          </div>
-        </div>
-        <div class="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
-          <a href="#">js</a>
-        </div>
-      </article>
 
 
       <article class="card">
@@ -174,29 +158,93 @@
 
 
     </section>
-  </div>
-  <!-- <hr id="hoz"> -->
-  <div id="foot">
 
-    <div id="socials">
-      <p class="p4">My Socials:</p>
-      <p id="p6"><a href="https://github.com/SkJameelAkhtar"><i class="fa fa-github-square"
-            id="github"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp;
-        <a href="https://www.linkedin.com/in/sjakhtar/"><i class="fa fa-linkedin-square"
-            id="linkedin"></i></a>&nbsp&nbsp&nbsp&nbsp;
-        <a href="https://twitter.com/skjameelakhtar"><i class="fa fa-twitter-square" id="twitter"></i></a>
-        <!-- &nbsp&nbsp&nbsp&nbsp&nbsp; -->
-        <!-- <a href="#" id="discord"><span>Discord</span></a> -->
-      </p>
+  </section>
+
+  <section id="skills" >
+    <h1>Skills</h1>
+    <div data-aos="zoom-out-up" data-aos-once="true">
+      <div id="skillcontainer">
+        <div class="skill" id="c"><i class="fa-sharp fa-solid fa-c"></i></div>
+        <div class="skill" id="cplusplus"><i class="fa-sharp fa-solid fa-c">++</i></div>
+        <div class="skill" id="java"><i class="fa-brands fa-java"></i></div>
+        <div class="skill" id="python"><i class="fa-brands fa-python"></i></div>
+        <div class="skill" id="html"><i class="fa-brands fa-html5"></i></div>
+        <div class="skill" id="css"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="skill" id="js"><i class="fa-brands fa-square-js"></i></div>
+      </div>
+      <div class="ccprofiles">
+        <h3>Competitive Programming Profiles</h3>
+        <div class="ccprofilecontainer">
+          <div class="ccprofile" id="profile1"><a href="https://bit.ly/sjaleetcode">LeetCode</a></div>
+          <div class="ccprofile" id="profile2"><a href="https://bit.ly/sjacodechef">Codechef</a></div>
+          <div class="ccprofile" id="profile3"><a href="https://bit.ly/sjacodeforces">Codeforces</a></div>
+          <div class="ccprofile" id="profile4"><a href="https://bit.ly/sjahackerrank">HackerRank</a></div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div id="contact">
-      <p class="p4">Contact Me:</p>
-      <p class="p5"><a href="mailto:skjameelakhtar2003@gmail.com">Email: skjameelakhtar2003@gmail.com</a><br>Phone: +91-9647288895</p>
+  <section id="aboutme">
+    <h1>About Me</h1>
+    <div id="aboutmecontainer" data-aos="zoom-in-up" data-aos-once="true">
+      <div class="about" id="abtpic"></div>
+      <div class="about" id="abt">
+        <!-- <div id="greetings"><span id="greet">Good Morning!</span></div> -->
+        <div id="abttext">
+          Hello! I am Sk Jameel Akhtar, based in India. I am pursuing my CS programme
+          currently.<br><br>
+          I love to code, participate in competitive programming contests, brainstorm and assist others in their
+          computer
+          journey. Besides, I also like to listen to music, cook, play both indoor and outdoor sports, read books, look
+          up
+          and study the night sky.<br><br>Want to join me on my journey or share yours with mine? Scroll down for my
+          contact credentials. I'd love to interact.</div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <section id="contactmeform">
+    <h1>Contact Me!</h1>
+    <form action="https://formsubmit.co/skjameelakhtar01@gmail.com" method="POST">
+      <div id="contactform" data-aos="zoom-out-up">
 
+        <div class="field"><input type="text" name="user name" required="required"><span class="inputdesc"><i
+              class="fa-regular fa-circle-user"></i> Full Name</span></div>
+        <div class="field"><input type="text" name="user mail address" required="required"><span class="inputdesc"><i
+              class="fa-regular fa-envelope"></i> Your Email</span></div>
+        <div class="field"><input type="text" name="subject" required="required"><span class="inputdesc"><i
+              class="fa-solid fa-circle-notch"></i> Subject</span></div>
+        <div class="field message"><textarea id="messagetext" name="message" rows="10" cols="80"></textarea><span
+            class="inputdesc"><i class="fa-regular fa-message"></i> Your Message</span></div>
+        <div class="submit"><input type="submit" id="submit"></div>
+      </div>
+    </form>
+    <footer>
+      <div class="contacts">
+        <div class="mode1">
+          <div class="modes1"><i class="fa-regular fa-envelope" id="mail"></i> <a href="mailto:someone@example.com">Email:
+              skjameelakhtar2003@gmail.com</a></div>
+          <div class="modes1"><i class="fa-solid fa-phone" id="mob"></i> Phone: +91 9647288895</div>
+        </div>
+        <div class="mode"><a href="https://github.com/SkJameelAkhtar"><i class="fa fa-github-square" id="github"></i>
+            Github</a></div>
+        <div class="mode"><a href="https://www.linkedin.com/in/sjakhtar/"><i class="fa fa-linkedin-square"
+              id="linkedin"></i> LinkedIn</a></div>
+        <div class="mode"><a href="https://twitter.com/skjameelakhtar"><i class="fa fa-twitter-square" id="twitter"></i>
+            Twitter</a></div>
+        <div class="mode"><a href="discordapp.com/users/698044563935199274"><i class="fa-brands fa-discord" id="discord"></i></i>
+            Discord</a></div>
+
+
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
