@@ -804,7 +804,7 @@ footer {
 
 @media screen and (max-width:345px) {
   #contactform {
-    right: 17%;
+    right: 12%;
     scale: 0.6;
   }
 }
@@ -813,6 +813,7 @@ footer {
   #contactform {
     right: 7%;
     scale: 0.75;
+    max-width: 90%;
   }
 }
 
@@ -820,6 +821,7 @@ footer {
   #contactform {
     right: 0%;
     scale: 0.8;
+    max-width: 95%;
   }
 }
 
@@ -829,14 +831,53 @@ footer {
   }
 
   #contactform {
-    right: -23%;
+    right: -10%;
+    scale: 0.8;
+    max-width: 95%;
   }
 
   .contacts {
     width: 95vw;
+    flex-direction: column;
   }
 
   #aboutmecontainer {
     justify-content: space-between;
+  }
+  #aboutmecontainer {
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #abtpic {
+    width: 150px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #abttext {
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  #contactmeform {
+    height: 52em;
+  }
+
+  .modes1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+  }
+}
+@media screen and (min-width:580px) and (max-width:768px) {
+  #contactform {
+    right: -25%;
+    scale: 0.8;
+    max-width: 95%;
   }
 }
