@@ -72,17 +72,18 @@ body{
 }
 .clocklocation{
     display: flex;
-    height: 60px;
     margin: 2% auto;
     align-items: center;
     justify-content: center;
     font-family: 'DM Mono';
     border-radius: 15px;
     font-size: 30px;
+    padding: 10px;
     z-index: 1;
 
     font-family: 'DM Mono', sans-serif;
     font-size: 150%;
+    text-align: center;
     width: 95%;
     color: whitesmoke;
     font-weight: bolder;
