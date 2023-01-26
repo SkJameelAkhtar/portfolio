@@ -461,7 +461,7 @@ h1 {
 
 .ccprofiles {
   margin: 30px auto;
-  width: 75vw;
+  width: 80vw;
 }
 
 h3 {
@@ -477,6 +477,7 @@ h3 {
   justify-content: space-around;
   margin: 50px auto 0px auto;
   font-size: 20px;
+  width: 80vw;
 }
 
 .ccprofile {
@@ -580,8 +581,18 @@ h3 {
   width: 27em;
   background: #313131;
   border-radius: 20px;
-  right: -55%;
+  /* right: -55%; */
   opacity: 0.9;
+}
+
+form {
+  width: 100vw;
+}
+
+#contactmeformspecific {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contactmeform h1 {
@@ -635,8 +646,6 @@ input {
   border-left: 1px solid #03bcf4;
   border-right: 1px solid #03bcf4;
 }
-
-
 
 .message textarea {
   height: 100px;
@@ -709,6 +718,18 @@ footer {
 
 
 @media screen and (max-width:425px) {
+  form {
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+  }
+h1{
+  font-size: 1.8rem;
+}
+#contactmeform h1{
+  font-size: 40px;
+}
+
   .navbar {
     display: none;
   }
@@ -722,7 +743,7 @@ footer {
   }
 
   #box2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: none;
   }
 
@@ -734,10 +755,32 @@ footer {
   .card-list {
     margin-left: 5px;
     width: 88vw;
+    height: 325px;
+  }
+
+  .card-header h2 {
+    font-size: 17px;
+  }
+
+  .card {
+    height: 270px;
+  }
+
+  .tags {
+    margin: 10px 0 2px;
+    padding: 3px 3px 3px;
+  }
+
+  .author-avatar img {
+    margin: 16px 10px;
+  }
+
+  .card-author {
+    margin: 25px 0 0;
   }
 
   h1 {
-    padding-left: 5px;
+    padding-left: 20px;
     padding-top: 6px;
   }
 
@@ -794,6 +837,10 @@ footer {
     height: 52em;
   }
 
+  #contactform {
+    margin: auto;
+  }
+
   .modes1 {
     display: flex;
     align-items: center;
@@ -803,25 +850,33 @@ footer {
 }
 
 @media screen and (max-width:345px) {
+  form {
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+  }
+
   #contactform {
-    right: 12%;
-    scale: 0.6;
+    /* right: 12%; */
+    scale: 0.8;
   }
 }
 
-@media screen and (min-width:346px) and (max-width:375px) {
+/* @media screen and (min-width:346px) and (max-width:375px) {
   #contactform {
     right: 7%;
-    scale: 0.75;
+    scale: 0.85;
     max-width: 90%;
   }
-}
+  h1 {
+    padding-left: 5px;}
+} */
 
-@media screen and (min-width:376px) and (max-width:425px) {
+@media screen and (min-width:346px) and (max-width:425px) {
   #contactform {
-    right: 0%;
+    /* right: 0%; */
     scale: 0.8;
-    max-width: 95%;
+    max-width: 97%;
   }
 }
 
@@ -831,7 +886,7 @@ footer {
   }
 
   #contactform {
-    right: -10%;
+    margin: auto;
     scale: 0.8;
     max-width: 95%;
   }
@@ -844,6 +899,7 @@ footer {
   #aboutmecontainer {
     justify-content: space-between;
   }
+
   #aboutmecontainer {
     width: 95vw;
     flex-direction: column;
@@ -874,10 +930,22 @@ footer {
     width: 95vw;
   }
 }
-@media screen and (min-width:580px) and (max-width:768px) {
+
+@media screen and (min-width:580px) and (max-width:870px) {
   #contactform {
-    right: -25%;
+    margin: auto;
     scale: 0.8;
     max-width: 95%;
+  }
+
+}
+
+@media screen and (min-width:871px) and (max-width:1440px) {
+  #contactform {
+    left: 50%;
+  }
+
+  #contactmeformspecific {
+    margin-top: 20px;
   }
 }
