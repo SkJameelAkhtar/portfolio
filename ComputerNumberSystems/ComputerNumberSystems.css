@@ -44,7 +44,8 @@ body {
 #Instructions {
     /* display: flex; */
     margin-top: 80px;
-    height: 160px;
+    padding-bottom: 20px;
+    /* height: 160px; */
 }
 
 .conv {
@@ -58,8 +59,9 @@ body {
     color: goldenrod;
     font-size: 30px;
     font-family: 'DM Mono';
-    padding-left: 15px;
-    padding-top: 10px;
+    /* padding-left: 15px;
+    padding-top: 10px; */
+    padding: 10px;
 }
 
 .gridlay {
