@@ -203,9 +203,9 @@ span {
 #box3 {
   width: 250px;
   height: 250px;
-  background: url('Profilepictures/propic.png');
+  background: url('Profilepictures/jbluestanding.jpg');
+  border-radius: 150px;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 
@@ -528,7 +528,7 @@ h3 {
 }
 
 #abtpic {
-  background: url("Profilepictures/aboutpic.jpg");
+  background: url("Profilepictures/jgreenstanding.jpg");
   background-size: cover;
   /* background-size: contain; */
   background-repeat: no-repeat;
